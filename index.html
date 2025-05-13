@@ -24,69 +24,91 @@
     </li>
     <li>
       <strong>git add [file]</strong>: Stages changes for the next commit.
+      <div class="details" style="display: none;">This command adds changes in the working directory to the staging area.</div>
     </li>
     <li>
       <strong>git commit -m "message"</strong>: Commits staged changes with a descriptive message.
+      <div class="details" style="display: none;">This command records changes to the repository with a message.</div>
     </li>
     <li>
       <strong>git status</strong>: Displays the state of the working directory and staging area.
+      <div class="details" style="display: none;">This command shows which files are staged, unstaged, or untracked.</div>
     </li>
     <li>
       <strong>git log</strong>: Shows the commit history.
+      <div class="details" style="display: none;">This command displays a list of commits made in the repository.</div>
     </li>
     <li>
       <strong>git diff</strong>: Shows differences between commits or the working tree.
+      <div class="details" style="display: none;">This command compares changes between commits, branches, or the working directory.</div>
     </li>
     <li>
       <strong>git branch</strong>: Lists, creates, or deletes branches.
+      <div class="details" style="display: none;">This command manages branches in the repository.</div>
     </li>
     <li>
       <strong>git checkout [branch]</strong>: Switches to the specified branch.
+      <div class="details" style="display: none;">This command changes the working branch.</div>
     </li>
     <li>
       <strong>git merge [branch]</strong>: Merges the specified branch into the current branch.
+      <div class="details" style="display: none;">This command integrates changes from another branch.</div>
     </li>
     <li>
       <strong>git pull</strong>: Fetches from and integrates with another repository or branch.
+      <div class="details" style="display: none;">This command updates the local branch with changes from the remote repository.</div>
     </li>
     <li>
       <strong>git push</strong>: Uploads local branch commits to the remote repository.
+      <div class="details" style="display: none;">This command sends local changes to the remote repository.</div>
     </li>
     <li>
       <strong>git remote -v</strong>: Displays the remote repository URLs.
+      <div class="details" style="display: none;">This command shows the URLs of remote repositories.</div>
     </li>
     <li>
       <strong>git config --global user.name "Name"</strong>: Sets the global username.
+      <div class="details" style="display: none;">This command configures the username for all repositories.</div>
     </li>
     <li>
       <strong>git config --global user.email "email@example.com"</strong>: Sets the global email address.
+      <div class="details" style="display: none;">This command configures the email address for all repositories.</div>
     </li>
     <li>
       <strong>git reset [file]</strong>: Unstages a file while retaining changes.
+      <div class="details" style="display: none;">This command removes a file from the staging area.</div>
     </li>
     <li>
       <strong>git rm [file]</strong>: Removes a file from the working directory and stages it.
+      <div class="details" style="display: none;">This command deletes a file and stages the deletion.</div>
     </li>
     <li>
       <strong>git stash</strong>: Temporarily shelves changes for a clean working directory.
+      <div class="details" style="display: none;">This command saves changes for later use.</div>
     </li>
     <li>
       <strong>git tag [name]</strong>: Creates a tag reference.
+      <div class="details" style="display: none;">This command marks a specific point in the repository's history.</div>
     </li>
     <li>
       <strong>git fetch</strong>: Downloads objects and refs from another repository.
+      <div class="details" style="display: none;">This command retrieves updates from a remote repository without merging them.</div>
     </li>
     <li>
       <strong>git rebase [branch]</strong>: Reapplies commits on top of another base tip.
+      <div class="details" style="display: none;">This command integrates changes by moving commits to a new base.</div>
     </li>
     <li>
       <strong>git cherry-pick [commit]</strong>: Applies changes from a commit to the current branch.
+      <div class="details" style="display: none;">This command applies specific commits from one branch to another.</div>
     </li>
     <li>
       <strong>git revert [commit]</strong>: Reverts a commit by creating a new one.
+      <div class="details" style="display: none;">This command undoes changes by creating a new commit.</div>
     </li>
     <li>
       <strong>git clean -f</strong>: Removes untracked files from the working directory.
+      <div class="details" style="display: none;">This command deletes untracked files to clean the working directory.</div>
     </li>
   </ul>
 </div>
@@ -95,16 +117,46 @@
 <div>
   <h2>GitLens Commands</h2>
   <ul>
-    <li><strong>GitLens: Toggle Line Blame</strong>: Shows/hides Git blame annotations for the current line.</li>
-    <li><strong>GitLens: Show Commit Details</strong>: Shows information about a specific commit.</li>
-    <li><strong>GitLens: Open Changes with Previous Revision</strong>: Compares file with its previous revision.</li>
-    <li><strong>GitLens: Show File History</strong>: Displays the history of the current file.</li>
-    <li><strong>GitLens: Show Line History</strong>: Shows the history of a selected line.</li>
-    <li><strong>GitLens: Show Repository Status</strong>: Displays the status of your repository.</li>
-    <li><strong>GitLens: Show Repositories View</strong>: Opens the GitLens repositories sidebar view.</li>
-    <li><strong>GitLens: Show Commit Graph</strong>: Shows a visual representation of the commit history.</li>
-    <li><strong>GitLens: Search Commits</strong>: Allows searching through commit messages and authors.</li>
-    <li><strong>GitLens: Show Contributors</strong>: Lists contributors to the file or repository.</li>
+    <li>
+      <strong>GitLens: Toggle Line Blame</strong>: Shows/hides Git blame annotations for the current line.
+      <div class="details" style="display: none;">This command toggles Git blame annotations for the current line.</div>
+    </li>
+    <li>
+      <strong>GitLens: Show Commit Details</strong>: Shows information about a specific commit.
+      <div class="details" style="display: none;">This command displays detailed information about a specific commit.</div>
+    </li>
+    <li>
+      <strong>GitLens: Open Changes with Previous Revision</strong>: Compares file with its previous revision.
+      <div class="details" style="display: none;">This command compares the current file with its previous revision.</div>
+    </li>
+    <li>
+      <strong>GitLens: Show File History</strong>: Displays the history of the current file.
+      <div class="details" style="display: none;">This command shows the commit history of the current file.</div>
+    </li>
+    <li>
+      <strong>GitLens: Show Line History</strong>: Shows the history of a selected line.
+      <div class="details" style="display: none;">This command displays the commit history of a specific line in the file.</div>
+    </li>
+    <li>
+      <strong>GitLens: Show Repository Status</strong>: Displays the status of your repository.
+      <div class="details" style="display: none;">This command shows the current status of the repository.</div>
+    </li>
+    <li>
+      <strong>GitLens: Show Repositories View</strong>: Opens the GitLens repositories sidebar view.
+      <div class="details" style="display: none;">This command opens the repositories view in the GitLens sidebar.</div>
+    </li>
+    <li>
+      <strong>GitLens: Show Commit Graph</strong>: Shows a visual representation of the commit history.
+      <div class="details" style="display: none;">This command displays a graphical representation of the commit history.</div>
+    </li>
+    <li>
+      <strong>GitLens: Search Commits</strong>: Allows searching through commit messages and authors.
+      <div class="details" style="display: none;">This command enables searching for specific commits by message or author.</div>
+    </li>
+    <li>
+      <strong>GitLens: Show Contributors</strong>: Lists contributors to the file or repository.
+      <div class="details" style="display: none;">This command lists all contributors to the current file or repository.</div>
+    </li>
   </ul>
 </div>
 
@@ -112,37 +164,130 @@
 <div>
   <h2>PowerShell Commands</h2>
   <ul>
-    <li><strong>Get-Help</strong>: Displays help about PowerShell commands.</li>
-    <li><strong>Get-Command</strong>: Lists all available commands.</li>
-    <li><strong>Get-Process</strong>: Lists currently running processes.</li>
-    <li><strong>Stop-Process</strong>: Stops one or more running processes.</li>
-    <li><strong>Get-Service</strong>: Retrieves the status of services.</li>
-    <li><strong>Start-Service</strong>: Starts a service.</li>
-    <li><strong>Stop-Service</strong>: Stops a service.</li>
-    <li><strong>Set-ExecutionPolicy</strong>: Changes script execution policy.</li>
-    <li><strong>Get-Content</strong>: Reads content from a file.</li>
-    <li><strong>Set-Content</strong>: Writes or replaces content in a file.</li>
-    <li><strong>Add-Content</strong>: Appends content to a file.</li>
-    <li><strong>Copy-Item</strong>: Copies files or directories.</li>
-    <li><strong>Move-Item</strong>: Moves files or directories.</li>
-    <li><strong>Remove-Item</strong>: Deletes files or folders.</li>
-    <li><strong>Rename-Item</strong>: Renames files or folders.</li>
-    <li><strong>New-Item</strong>: Creates a new file or directory.</li>
-    <li><strong>Get-ChildItem</strong>: Lists files and folders in a directory.</li>
-    <li><strong>Set-Location</strong>: Changes the current directory.</li>
-    <li><strong>Get-Location</strong>: Displays the current directory.</li>
-    <li><strong>Clear-Host</strong>: Clears the terminal screen.</li>
-    <li><strong>Get-Alias</strong>: Lists aliases for cmdlets.</li>
-    <li><strong>Export-Csv</strong>: Saves data to a CSV file.</li>
-    <li><strong>Import-Csv</strong>: Reads data from a CSV file.</li>
-    <li><strong>ConvertTo-Json</strong>: Converts objects to JSON format.</li>
-    <li><strong>ConvertFrom-Json</strong>: Converts JSON data to objects.</li>
-    <li><strong>Test-Connection</strong>: Sends ICMP echo requests (ping).</li>
-    <li><strong>Invoke-WebRequest</strong>: Sends HTTP/HTTPS requests.</li>
-    <li><strong>Start-Job</strong>: Runs a background job.</li>
-    <li><strong>Get-Job</strong>: Gets background job information.</li>
-    <li><strong>Receive-Job</strong>: Gets job results.</li>
-    <li><strong>Stop-Job</strong>: Stops a background job.</li>
+    <li>
+      <strong>Get-Help</strong>: Displays help about PowerShell commands.
+      <div class="details" style="display: none;">This command provides detailed help for PowerShell commands.</div>
+    </li>
+    <li>
+      <strong>Get-Command</strong>: Lists all available commands.
+      <div class="details" style="display: none;">This command lists all available PowerShell commands.</div>
+    </li>
+    <li>
+      <strong>Get-Process</strong>: Lists currently running processes.
+      <div class="details" style="display: none;">This command displays a list of all running processes on the system.</div>
+    </li>
+    <li>
+      <strong>Stop-Process</strong>: Stops one or more running processes.
+      <div class="details" style="display: none;">This command terminates specified running processes.</div>
+    </li>
+    <li>
+      <strong>Get-Service</strong>: Retrieves the status of services.
+      <div class="details" style="display: none;">This command displays the status of all services on the system.</div>
+    </li>
+    <li>
+      <strong>Start-Service</strong>: Starts a service.
+      <div class="details" style="display: none;">This command starts a specified service.</div>
+    </li>
+    <li>
+      <strong>Stop-Service</strong>: Stops a service.
+      <div class="details" style="display: none;">This command stops a specified service.</div>
+    </li>
+    <li>
+      <strong>Set-ExecutionPolicy</strong>: Changes script execution policy.
+      <div class="details" style="display: none;">This command modifies the script execution policy for PowerShell.</div>
+    </li>
+    <li>
+      <strong>Get-Content</strong>: Reads content from a file.
+      <div class="details" style="display: none;">This command retrieves the content of a specified file.</div>
+    </li>
+    <li>
+      <strong>Set-Content</strong>: Writes or replaces content in a file.
+      <div class="details" style="display: none;">This command writes or replaces content in a specified file.</div>
+    </li>
+    <li>
+      <strong>Add-Content</strong>: Appends content to a file.
+      <div class="details" style="display: none;">This command appends content to a specified file.</div>
+    </li>
+    <li>
+      <strong>Copy-Item</strong>: Copies files or directories.
+      <div class="details" style="display: none;">This command copies files or directories to a new location.</div>
+    </li>
+    <li>
+      <strong>Move-Item</strong>: Moves files or directories.
+      <div class="details" style="display: none;">This command moves files or directories to a new location.</div>
+    </li>
+    <li>
+      <strong>Remove-Item</strong>: Deletes files or folders.
+      <div class="details" style="display: none;">This command deletes specified files or folders.</div>
+    </li>
+    <li>
+      <strong>Rename-Item</strong>: Renames files or folders.
+      <div class="details" style="display: none;">This command renames specified files or folders.</div>
+    </li>
+    <li>
+      <strong>New-Item</strong>: Creates a new file or directory.
+      <div class="details" style="display: none;">This command creates a new file or directory at the specified location.</div>
+    </li>
+    <li>
+      <strong>Get-ChildItem</strong>: Lists files and folders in a directory.
+      <div class="details" style="display: none;">This command lists all files and folders in a specified directory.</div>
+    </li>
+    <li>
+      <strong>Set-Location</strong>: Changes the current directory.
+      <div class="details" style="display: none;">This command changes the current working directory.</div>
+    </li>
+    <li>
+      <strong>Get-Location</strong>: Displays the current directory.
+      <div class="details" style="display: none;">This command displays the current working directory.</div>
+    </li>
+    <li>
+      <strong>Clear-Host</strong>: Clears the terminal screen.
+      <div class="details" style="display: none;">This command clears all content from the terminal screen.</div>
+    </li>
+    <li>
+      <strong>Get-Alias</strong>: Lists aliases for cmdlets.
+      <div class="details" style="display: none;">This command lists all aliases for PowerShell cmdlets.</div>
+    </li>
+    <li>
+      <strong>Export-Csv</strong>: Saves data to a CSV file.
+      <div class="details" style="display: none;">This command exports data to a specified CSV file.</div>
+    </li>
+    <li>
+      <strong>Import-Csv</strong>: Reads data from a CSV file.
+      <div class="details" style="display: none;">This command imports data from a specified CSV file.</div>
+    </li>
+    <li>
+      <strong>ConvertTo-Json</strong>: Converts objects to JSON format.
+      <div class="details" style="display: none;">This command converts objects into JSON format.</div>
+    </li>
+    <li>
+      <strong>ConvertFrom-Json</strong>: Converts JSON data to objects.
+      <div class="details" style="display: none;">This command converts JSON data into PowerShell objects.</div>
+    </li>
+    <li>
+      <strong>Test-Connection</strong>: Sends ICMP echo requests (ping).
+      <div class="details" style="display: none;">This command sends ICMP echo requests to test network connectivity.</div>
+    </li>
+    <li>
+      <strong>Invoke-WebRequest</strong>: Sends HTTP/HTTPS requests.
+      <div class="details" style="display: none;">This command sends HTTP or HTTPS requests to a specified URL.</div>
+    </li>
+    <li>
+      <strong>Start-Job</strong>: Runs a background job.
+      <div class="details" style="display: none;">This command starts a background job in PowerShell.</div>
+    </li>
+    <li>
+      <strong>Get-Job</strong>: Gets background job information.
+      <div class="details" style="display: none;">This command retrieves information about running background jobs.</div>
+    </li>
+    <li>
+      <strong>Receive-Job</strong>: Gets job results.
+      <div class="details" style="display: none;">This command retrieves the results of a completed background job.</div>
+    </li>
+    <li>
+      <strong>Stop-Job</strong>: Stops a background job.
+      <div class="details" style="display: none;">This command stops a running background job.</div>
+    </li>
   </ul>
 </div>
 
