@@ -14,9 +14,6 @@ listItems.forEach(item => {
     } else {
       details.style.display = 'none';
     }
-
-    // Display additional information (example: alert)
-    alert(`You clicked on: ${item.textContent}`);
   });
 });
 
