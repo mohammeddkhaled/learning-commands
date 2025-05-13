@@ -17,3 +17,19 @@ listItems.forEach(item => {
   });
 });
 
+// Search functionality
+const searchBar = document.getElementById('searchBar');
+
+searchBar.addEventListener('input', () => {
+  const searchText = searchBar.value.toLowerCase();
+
+  listItems.forEach(item => {
+    const text = item.textContent.toLowerCase();
+    if (text.includes(searchText)) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+});
+
