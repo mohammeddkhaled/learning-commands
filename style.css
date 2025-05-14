@@ -65,6 +65,23 @@ strong {
   color: #2980b9;
 }
 
+/* Style for the copy button */
+.copy-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+  background-color: #2980b9;
+}
+
 @media (max-width: 600px) {
   body {
     margin: 10px;
