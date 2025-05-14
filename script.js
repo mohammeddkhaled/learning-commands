@@ -32,3 +32,17 @@ searchBar.addEventListener('input', () => {
     }
   });
 });
+
+// Add copy-to-clipboard functionality
+const copyButtons = document.querySelectorAll('.copy-btn');
+
+copyButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const command = button.getAttribute('data-command');
+    navigator.clipboard.writeText(command).then(() => {
+      alert(`Copied to clipboard: ${command}`);
+    }).catch(err => {
+      console.error('Failed to copy text: ', err);
+    });
+  });
+});
